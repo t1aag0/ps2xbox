@@ -23,12 +23,6 @@ Windows may say "Windows protected your PC" because the app isn't signed. Click 
 
 If a game reacts to every button twice, it's seeing both controllers. [HidHide](https://github.com/nefarius/HidHide/releases) hides the real one from games.
 
-## Getting the .exe
-
-- **Releases:** the latest PS2Xbox.exe is on the **Releases** page. To publish one: GitHub → Releases → *Draft a new release* → type a new tag like `v1.0.0` → *Publish release*. The exe is built and attached within a few minutes.
-- **Automatic:** every push to `main` builds it on GitHub. Open the **Actions** tab, click the latest run, and download **PS2Xbox** under *Artifacts*.
-- **On your own PC:** install Python (tick "Add python.exe to PATH"), then double-click `build.bat`. The result is `dist\PS2Xbox.exe`.
-
 ## Changing the mapping
 
 Edit the `MAPPING` block at the top of `ps2xbox.py`.
