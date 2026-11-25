@@ -16,6 +16,9 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
+        env:
+          # vgamepad otherwise opens the ViGEmBus installer and waits forever.
+          VGAMEPAD_SKIP_VIGEMBUS_INSTALL: "true"
         run: python -m pip install --upgrade pygame vgamepad pystray pillow pyinstaller
 
       - name: Build
